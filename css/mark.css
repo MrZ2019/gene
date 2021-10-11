@@ -1,0 +1,18 @@
+/*
+app:    gene
+name:   mark.js
+date:   Nov.18
+*/
+
+/*  .God-Selector   */
+
+.God-Selector {
+    border: 1px maroon solid;
+    border-radius: 4px;
+
+    background: Seashell;
+}
+
+.God-Selector.Hover {
+	background: burlyWood;
+}

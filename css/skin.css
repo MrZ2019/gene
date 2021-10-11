@@ -1,0 +1,22 @@
+/*
+app:    gene
+file:   skin.css
+*/
+
+::-webkit-scrollbar {
+    background: white;
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    border-radius: 8px;
+    background: lightgray;
+}
+
+/*	my-box */
+
+#my-box {
+	text-align: left;
+}

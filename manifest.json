@@ -1,0 +1,164 @@
+{
+    "manifest_version": 2,    //  chrome extension update
+
+    "name": "web-gene",
+    "description": "I want to get into every page, manipulate them.",
+
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon" : "house/icons/virus_16.png" //  icon displayed in toolbar
+    }
+
+    ,// beautiful icons
+    "icons": {
+        "16": "house/icons/virus_16.png",
+        "48": "house/icons/virus_48.png"
+    }
+    ,
+    //  powerful scripts
+    "content_scripts":
+        [
+            //  preload
+            {
+                "matches": ["http://*/*"],
+                "js": ["ant/ant.js", "ant/ant.ui.js", "lib/jquery/jquery-2.0.3.js",  "content/urlLoader.js", "content/data.js", "content/Variations.js", "content/COMMAND.js", "content/DOM.js","content/WORKER.js", "ant/methods.js", "ant/preload.js" ],
+                "css": [],
+                "run_at": "document_start"
+            },
+
+            //  jquery 2.0
+            {
+                "matches": ["http://*/*"],
+                "js": ["lib/jquery-ui/jquery-ui.js" ],
+                //"css": [ "lib/jquery-ui/jquery-ui.css" ],
+                "run_at": "document_start"
+            },
+
+            //  test or initial
+            {
+                "matches": ["http://*/*"],
+                "js": [  "content/initial.js", /*"content/test_jquery.js", */"content/demo1.js"/*"test1/douban.js","test1/js.js"*/],
+                "css": [ "css/skin.css", "css/clothes.css", "css/decorate.css", "css/mark.css", "css/modify.css"],
+                "run_at": "document_start"
+            },
+//            ,
+//            {
+//                "matches": ["http://*/*"],
+//                "js": [
+//                    "lib/bootstrap/js/bootstrap.js"
+//                ],
+//                "css":
+//                    [
+//                        "lib/bootstrap/css/bootstrap.css"
+//                    ],
+//                "run_at": "document_start"
+//            },
+            //  uikit
+            //  it's good kit!
+//            {
+//                "matches": [ "http://*/*" ],
+//                "js": [ "lib/uikit/uikit.min.js" ],
+//                "css": [ "lib/uikit/uikit.all.min.css"],
+//                "run_at": "document_start"
+//            }
+
+            //  codemirror
+            {
+                "matches": [ "http://*/*" ],
+                "js": [
+                    "lib/codemirror/codemirror.js",
+
+                    "lib/codemirror/mode/xml/xml.js",
+                    "lib/codemirror/mode/css/css.js",
+                    "lib/codemirror/mode/javascript/javascript.js",
+                    "lib/codemirror/mode/htmlmixed/htmlmixed.js",
+
+                    //  addon
+                    "lib/codemirror/addon/display/fullscreen.js",
+
+                    //  edit
+                    "lib/codemirror/addon/edit/matchbrackets.js",
+
+                    //  selection
+                    "lib/codemirror/addon/selection/active-line.js"
+                ],
+                "run_at": "document_start"
+            }
+
+        ]
+    ,
+    //  resourcefule
+    "web_accessible_resources":
+        [
+            //  ant.js
+            "lib/spy.js",
+            "ant/ant.js",
+            "css/mycss.css",
+
+            "content/page.init.js",
+
+            //  jquery.min.js
+            "lib/jquery/jquery-2.1.0.js",
+            "lib/jquery/jquery-2.0.3.min.map",
+            //  juqery.ui.min
+
+            "lib/jquery-ui/jquery-ui.js",
+            "lib/jquery-ui/jquery-ui.css",
+
+            //  lots of images for jquery-ui
+            "lib/jquery-ui/images/animated-overlay.gif",
+            "lib/jquery-ui/images/ui-bg_flat_0_aaaaaa_40x100.png",
+            "lib/jquery-ui/images/ui-bg_flat_75_ffffff_40x100.png",
+            "lib/jquery-ui/images/ui-bg_glass_55_fbf9ee_1x400.png",
+            "lib/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png",
+            "lib/jquery-ui/images/ui-bg_glass_75_dadada_1x400.png",
+            "lib/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png",
+            "lib/jquery-ui/images/ui-bg_glass_95_fef1ec_1x400.png",
+            "lib/jquery-ui/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+            "lib/jquery-ui/images/ui-icons_2e83ff_256x240.png",
+            "lib/jquery-ui/images/ui-icons_222222_256x240.png",
+            "lib/jquery-ui/images/ui-icons_454545_256x240.png",
+            "lib/jquery-ui/images/ui-icons_888888_256x240.png",
+            "lib/jquery-ui/images/ui-icons_cd0a0a_256x240.png",
+
+            /*  CodeMirror  */
+
+            //  basic
+            "lib/codemirror/codemirror.css",
+            "lib/codemirror/codemirror.js",
+
+            //  modes
+            "lib/codemirror/mode/xml/xml.js",
+            "lib/codemirror/mode/css/css.js",
+            "lib/codemirror/mode/javascript/javascript.js",
+            "lib/codemirror/mode/htmlmixed/htmlmixed.js",
+
+            //  themes
+            "lib/codemirror/theme/ambiance.css",
+            "lib/codemirror/theme/the-matrix.css",
+            "lib/codemirror/theme/monokai.css",
+            "lib/codemirror/theme/lesser-dark.css",
+            "lib/codemirror/theme/night.css",
+
+            //  addons
+
+            //  fullscreen
+            "lib/codemirror/addon/display/fullscreen.css",
+            "lib/codemirror/addon/display/fullscreen.js",
+
+            //  edit
+            "lib/codemirror/addon/edit/matchbrackets.js",
+
+            //  selection
+            "lib/codemirror/addon/selection/active-line.js",
+
+            /*  CodeMirror  */
+
+            "lib/uikit/uikit.min.js",
+            "lib/uikit/uikit.all.min.css",
+
+            //  jquery.json.js
+            "lib/tool/tool.json.js"
+        ]
+}

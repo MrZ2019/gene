@@ -1,0 +1,66 @@
+/*
+app:    gene
+name:   clothes
+desc:    dress up ur roles
+*/
+/*	prompt-man */
+.PAGE-FIXED {
+  position: fixed;
+}
+#prompt-man {
+  position: fixed;
+  width: 60%;
+  left: 20%;
+  border: solid #a0522d 1px;
+  border-radius: 4px;
+  text-align: center;
+  background: snow;
+  color: tan;
+  font-size: 24px;
+  padding: 12px 32px;
+  top: 60%;
+  opacity: 0.8;
+  z-index: 666;
+}
+/*	Printer */
+.Printer {
+  white-space: pre-wrap;
+  padding: 8px;
+  background: white;
+  max-height: 320px;
+  overflow-y: scroll;
+  word-break: break-word;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 24px;
+  -webkit-column-rule: 1px solid silver;
+}
+.Printer p {
+  margin: 2px;
+  padding: 4px 12px 4px 4px;
+  border-bottom: #e7e7e7 1px solid;
+}
+/*	text/plain */
+.Printer .Plain {
+  color: #444;
+  font-size: 8px;
+}
+/*	error  */
+.Printer .Error {
+  color: red;
+}
+/*	info 	*/
+.Printer .Info {
+  color: olive;
+}
+#main-printer {
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  border: solid #c0c0c0 1px;
+  border-radius: 8px;
+  top: 4px;
+  opacity: 0.9;
+}
+#main-printer:hover {
+  opacity: 1;
+}

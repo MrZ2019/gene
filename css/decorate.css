@@ -1,0 +1,180 @@
+/*
+name:   decorate.css
+desc:   our role need beautiful!
+*/
+.ui-dialog[aria-describedby*="code-dialog1"] {
+  min-width: 800px;
+  min-height: 280px;
+
+  text-align: left;
+}
+
+.ui-dialog[aria-describedby*="code-dialog1"] .Editer-Option-Box {
+  
+  position: relative;
+  margin-top: 32px;
+}
+
+.ui-dialog[aria-describedby*="code-dialog1"] .Code-Dialog-Box {
+
+  height: 32px;
+}
+
+.ui-dialog[aria-describedby*="code-dialog1"] .ui-dialog-titlebar {
+  padding: 0px;
+  border: none;
+  text-align: center;
+  background: white;
+}
+.ui-dialog[aria-describedby*="code-dialog1"] .ui-dialog-title {
+  background: white;
+}
+.ui-dialog[aria-describedby*="code-dialog1"] .CodeMirror {
+  border: solid #c0c0c0 1px;
+  border-radius: 4px;
+  margin: 8px 2px;
+  padding: 4px;
+  font-size: 10px;
+}
+.Strong-Code-Editer {
+  overflow-x: hidden;
+}
+.ui-dialog[aria-describedby*="code-dialog1"] .CodeMirror {
+  margin-top: 12px;
+}
+.Dialog-Btn {
+  position: absolute;
+  top: -6px;
+}
+.ui-dialog[aria-describedby*="code-dialog1"] .Inspect-Btn {
+  position: absolute;
+  top: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  right: 160px;
+  color: silver;
+}
+.ui-dialog[aria-describedby*="code-dialog1"] .New-Btn {
+  position: absolute;
+  top: 0px;
+  font-size: 14px;
+  right: 96px;
+  color: silver;
+}
+.ui-dialog[aria-describedby*="code-dialog1"] .Save-Btn {
+  position: absolute;
+  top: 0px;
+  right: 240px;
+  top: 0px;
+}
+.ui-dialog[aria-describedby*="code-dialog1"] .Option-Btn {
+  position: absolute;
+  top: 0px;
+  font-size: 12px;
+  right: 4px;
+  top: 2px;
+  color: silver;
+}
+.ui-dialog[aria-describedby*="code-dialog1"] label {
+  margin: 4px 8px;
+  font-size: 12px;
+}
+.ui-dialog[aria-describedby*="code-dialog1"] label * {
+  margin: 0 4px;
+}
+/*  switcher  */
+.uk-subnav li a {
+  color: dimgray;
+  font-style: italic;
+  font-size: 12px;
+  border-right: 1px solid gainsboro;
+  padding-right: 8px;
+}
+.uk-subnav li a:hover {
+  text-decoration: none;
+  color: silver;
+}
+.uk-subnav li a + .Close-Btn {
+  font-size: 12px;
+  color: orange;
+  visibility: hidden;
+}
+.uk-subnav li:hover a + .Close-Btn {
+  visibility: visible;
+}
+.uk-subnav li.uk-active a {
+  color: gray;
+  font-weight: bold;
+}
+/*  Wheeler */
+#wheeler-help {
+  position: fixed;
+  top: 8%;
+  left: 40%;
+  padding: 16px;
+  margin: 0px;
+  background: black;
+  width: 20%;
+  list-style: none;
+  border-radius: 16px;
+  display: none;
+
+  font-size: 10px;
+  z-index: 666;
+
+  opacity: 0.94;
+}
+
+#wheeler-help:hover {
+  opacity: 1;
+}
+
+#wheeler-help li {
+  line-height: 16px;
+}
+#wheeler-help span {
+  color: dimgray;
+  margin: 0px 20px;
+}
+#wheeler-status.Dark {
+  opacity: 0.3;
+}
+#wheeler-status {
+  position: fixed;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 8px;
+  background: black;
+  display: inline-block;
+  padding: 2px 4px;
+  opacity: 0.8;
+}
+#wheeler-status:hover {
+  opacity: 1;
+}
+#wheeler-sign {
+  float: left;
+  font-weight: bold;
+  color: white;
+  margin: auto 4px;
+  cursor: pointer;
+}
+#wheeler-sign:hover {
+  color: white;
+}
+#wheeler-message {
+  float: left;
+}
+.Lock-Node {
+  border: orange 1px solid !important;
+  border-radius: 8px;
+}
+.Lock-Node:hover {
+  border: red 1px solid !important;
+}
+
+
+.ui-dialog[aria-describedby*="code-dialog1"] #editor-tab {
+  
+  margin-top: 32px;
+}

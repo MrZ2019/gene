@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+#client-box {
+    margin: 128px auto;
+    width: 60%;
+}
+#status-window {
+    border: 1px solid green;
+    color: dimgray;
+    min-height: 240px;
+}
+

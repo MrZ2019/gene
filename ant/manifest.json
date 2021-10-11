@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+
+    "name": "ant.js",
+    "version": "1",
+
+    "description": "my little creature.",
+
+    "icons":
+    {
+        "48": "bird_48.png"
+    },
+    //  content script
+    "content_scripts":
+        [
+            {
+                "matches": ["http://*/*"],
+                "js": [ "ant.js", "data.js", "methods.js", "preload.js", "ant_initial.js"],
+                "run_at": "document_start"
+            }
+        ]
+    ,
+    //  resources
+    "web_accessible_resources":
+        [
+            "ant.js"
+        ]
+}

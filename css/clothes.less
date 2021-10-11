@@ -1,0 +1,99 @@
+/*
+app:    gene
+name:   clothes
+desc:    dress up ur roles
+*/
+
+/*	prompt-man */
+
+@width: 60%;
+@pad: 12px 32px;
+@m-font: 24px;
+
+.PAGE-FIXED {
+	position:  fixed;
+}
+
+.CENTER(@width: 80%) {
+	width: @width;
+
+	left: (100% - @width)/2;
+}
+
+.R-Border(@color: silver; @radius: 4px) {
+	border: solid @color 1px;
+	border-radius: @radius;
+}
+
+#prompt-man {
+	.PAGE-FIXED;
+	.CENTER(60%);
+	
+	.R-Border(sienna, 4px);	
+	text-align: center;
+
+	background: snow;
+	color: tan;
+
+	font-size: @m-font;
+	padding: @pad;
+	top: 60%;
+
+
+	opacity: 0.8;
+    z-index: 666;
+}
+
+/*	Printer */
+
+.Printer {
+	white-space: pre-wrap;
+	padding: 8px;
+	background: white;
+	
+	max-height: 320px;
+
+	overflow-y: scroll;
+
+	word-break: break-word;
+
+	-webkit-column-count: 1;
+	-webkit-column-gap: 24px;
+	-webkit-column-rule: 1px solid silver;
+}
+
+.Printer p {
+	margin: 2px;
+	padding: 4px 12px 4px 4px;
+	border-bottom: #E7E7E7 1px solid
+}
+/*	text/plain */
+.Printer .Plain {
+	color: #444;
+	font-size: 8px;
+}
+
+/*	error  */
+.Printer .Error {
+	color: red;
+}
+
+/*	info 	*/
+.Printer .Info {
+	color: olive;
+}
+
+#main-printer {
+	.PAGE-FIXED;
+	.CENTER(80%);
+
+	.R-Border(silver, 8px);
+
+	top: 4px;
+	
+	opacity: 0.9;
+}
+
+#main-printer:hover {
+	opacity: 1;
+}

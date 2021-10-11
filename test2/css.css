@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body > img {
+	display: none;
+}
+#my-gallery {
+
+	position: fixed;
+	width: 75%;
+	left: 12.5%;
+	top: 4%;
+
+	padding: 8px;
+	background: rgba(0, 0, 0, 0.9);
+
+	text-align: center;
+
+	overflow-y: scroll;
+	max-height: 90%;
+
+	border-radius: 16px;
+}
+
+#my-gallery img{
+
+	max-width: 200px;
+
+	margin: 16px;
+
+	float: left;
+}
+
